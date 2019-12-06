@@ -18,9 +18,9 @@ let baseURL = process.env.REACT_APP_BASEURL;
 if (process.env.NODE_ENV === "development") {
   baseURL = "http://localhost:3003";
 } else {
-  baseURL = "https://silly-shannon-7ce441.netlify.com";
+  baseURL = "https://professfinder.herokuapp.com/";
 }
-// baseURL = 'https://silly-shannon-7ce441.netlify.com'
+
 console.log("current base URL:", baseURL);
 
 //PARTICLE BACKGROUND
