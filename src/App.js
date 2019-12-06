@@ -169,7 +169,7 @@ class App extends Component {
         <header className="header">
           <img
             className="logo"
-            src="/images/professFinder.png"
+            src="/public/images/professFinder.png"
             alt="logo"
           ></img>
           {this.state.showNew ? (
