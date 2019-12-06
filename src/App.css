@@ -1,22 +1,289 @@
-.App {
+.main {
+  margin: 0px auto;
+  width: 95%;
+}
+
+.headerH1 {
+  text-align: center;
+  margin: 40px auto -20px auto;
+}
+
+.slogan {
+  text-align: center;
+  margin: 15px auto -10px auto;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.particlesOverlay {
+  width: 100%;
+  z-index: 300;
+  margin: 40px auto -150px auto;
+  color: white;
+  font-weight: 700;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
+.particlesH1 {
+  font-weight: 700;
+  font-size: 50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logo {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 30%;
+}
+
+.header {
+  width: 100%;
+  margin: 0px auto;
+  height: 65px;
+  background: rgba(2, 44, 63, 0.2);
+}
+
+.profileCardParent {
+  width: 95%;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 10px auto;
+}
+
+.profileCard {
+  z-index: 100;
+  background: rgba(2, 44, 63, 0.4);
+  width: 30%;
+  border-radius: 5%;
+  display: flex;
+  margin: 15px auto;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.profileCardGrand1 {
+  margin: 10px auto 0px auto;
+  text-align: center;
+}
+
+.profileCardGrand2 {
+  text-align: center;
+  font-size: 16px;
+  background: rgb(255, 255, 255);
+  border: 2px solid rgb(187, 187, 187);
+  height: 100px;
+}
+
+.profileCard:hover {
+  background-color: rgba(2, 44, 63);
+  margin: 0px auto;
+}
+
+.profileImage {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: 5px auto;
+}
+
+.canvas {
+  height: 100px;
+  margin-bottom: 50px;
+}
+
+.hero {
+  width: 100%;
+  background: white;
+  margin: 0px auto;
+}
+
+.hero-body {
+  z-index: 400;
+  margin: -15px auto;
+  width: 100%;
+}
+
+.column {
+  text-align: center;
+  border-radius: 2%;
+  height: 150px;
+  border-right: 5px solid white;
+  background-color: rgba(2, 44, 63, 0.2);
+}
+.homeCard {
+  margin: 15px auto;
+}
+
+.searchParent {
+  display: flex;
+  z-index: 500;
+  background-color: rgba(2, 44, 63, 1);
+  width: 100%;
+  margin: 20px auto;
+}
+.searchContainer {
+  display: flex;
+  width: 100%;
+  margin: 12px auto;
+}
+
+.searchChild1 {
+  width: 60%;
+  margin: 0 10px;
+}
+.searchChild2 {
+  width: 25%;
+}
+
+.searchLabel {
+  width: 15%;
+  padding: 10px;
+  font-weight: 700;
+  color: white;
+  text-align: right;
+}
+
+.profileInfo {
+  z-index: 800;
+}
+
+.newProfileInfo {
+  background: white;
+  z-index: 900;
+  top: 5%;
+  left: 5%;
+  right: 5%;
+  bottom: 5%;
+  margin: auto;
+  border-radius: 2%;
+  position: absolute;
+  background: white;
+}
+
+.newProfileFieldsInner {
+  z-index: 900;
+  top: 8%;
+  left: 8%;
+  right: 8%;
+  bottom: 8%;
+  margin: 5px auto;
+  border-radius: 1%;
+  position: absolute;
+  overflow: scroll;
+  background: white;
+}
+
+.modalBackground {
+  z-index: 900;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  position: fixed;
+  background-color: rgba(239, 239, 239, 1);
+}
+
+.addProfilebtn {
+  margin: 15px 15px 0px 15px;
+  float: right;
+  font-weight: 700;
+}
+
+.newProfileH4 {
+  text-align: center;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #14609f;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #14609f;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.controlToggle {
+  width: 10%;
+  margin: 0px auto;
+}
+
+.select {
+  margin: 0px auto;
+  width: 100%;
+}
+
+.showImage {
+  margin: auto;
+  height: auto;
+}
+
+.aboutMe {
+  height: auto;
+}
+
+.profileShow {
+  text-align: center;
+  background-color: white;
+}
+
+.profileShowImage {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.likes {
+  background-color: rgba(23, 115, 219, 0.5);
   color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+.editDelete {
+  margin-left: 20%;
+  display: flex;
 }
